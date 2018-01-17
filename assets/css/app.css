@@ -1,0 +1,89 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.manar-top-bar {
+    border-top: 4px solid #01a6a0;
+}
+
+.manar-logo {}
+
+.manar-link {}
+
+.mana-searchbox {}
+
+.manar-link>li {
+    margin-right: 7px;
+}
+
+.manar-link>li::last-child::after {
+    contain: "&nbsp;";
+}
+
+.manar-link>li:not(:last-child)::after {
+    content: '|';
+    font-size: 14px;
+    color: #0a1e75;
+}
+
+.manar-link>li>a {
+    color: #0a1e75;
+    padding: 0 11px;
+}
+
+.manar-link>li>a>i {
+    font-size: 80%;
+}
+
+.manar-link>li>a>span {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 85%;
+}
+
+.col-sm.manar-logo {}
+
+.manar-top-logo-inner {
+    background-image: url(../images/logo.png);
+    width: 103px;
+    height: 140px;
+    box-shadow: 1px 1px 4px 0px #c7c7c7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and ( max-width: 750px) {
+    .hidden-sm-down {
+        display: none;
+    }
+}
+
+@media screen and ( min-width: 751px) {
+    .see-on-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hidden-sm-down {
+        display: none;
+    }
+    .see-on-mobile {
+        display: block;
+    }
+}
