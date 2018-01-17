@@ -1,63 +1,184 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import "https://fonts.googleapis.com/css?family=Roboto";
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif
 }
 
-li {
-    list-style: none;
+.manar-warper .bg-light {
+    background-color: #eaeaea !important
 }
 
-a {
-    text-decoration: none;
+.manar-warper li {
+    list-style: none
 }
 
-a:hover {
-    text-decoration: none;
+.manar-warper a {
+    text-decoration: none
 }
 
-.manar-top-bar {
+.manar-warper a:hover {
+    text-decoration: none
+}
+
+.manar-warper .manar-top-bar {
     border-top: 4px solid #01a6a0;
+    padding: 7px;
+    height: 50px
 }
 
-.manar-logo {}
-
-.manar-link {}
-
-.mana-searchbox {}
-
-.manar-link>li {
-    margin-right: 7px;
+.manar-warper .manar-top-bar .manar-logo {
+    position: relative
 }
 
-.manar-link>li::last-child::after {
-    contain: "&nbsp;";
+.manar-warper .manar-top-bar .manar-link>li {
+    margin-right: 7px
 }
 
-.manar-link>li:not(:last-child)::after {
+.manar-warper .manar-top-bar .manar-link>li::last-child::after {
+    contain: "&nbsp;"
+}
+
+.manar-warper .manar-top-bar .manar-link>li:not(:last-child)::after {
     content: '|';
     font-size: 14px;
+    color: #0a1e75
+}
+
+.manar-warper .manar-top-bar .manar-link>li>a {
     color: #0a1e75;
+    padding: 0 11px
 }
 
-.manar-link>li>a {
-    color: #0a1e75;
-    padding: 0 11px;
+.manar-warper .manar-top-bar .manar-link>li>a>i {
+    font-size: 80%
 }
 
-.manar-link>li>a>i {
-    font-size: 80%;
-}
-
-.manar-link>li>a>span {
+.manar-warper .manar-top-bar .manar-link>li>a>span {
     margin-left: 5px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 85%;
+    font-size: 85%
 }
 
-.col-sm.manar-logo {}
+.manar-warper .manar-top-bar .manar-top-logo-inner {
+    position: relative;
+    z-index: 999;
+    margin-right: 40px
+}
 
-.manar-top-logo-inner {
+.manar-warper .manar-top-bar .manar-top-logo-inner img {
+    box-shadow: 0px 0px 20px 1px rgba(48, 48, 46, 0.2);
+    margin-top: -10px
+}
+
+.manar-warper .manar-top-bar .mana-searchbox {
+    margin-top: 5px;
+    float: right
+}
+
+.manar-warper .manar-top-bar .mana-searchbox input {
+    width: 207px;
+    height: 30px;
+    display: inline-block;
+    box-shadow: none;
+    border: 1px solid #bebebd;
+    color: #333
+}
+
+.manar-warper .manar-top-bar .mana-searchbox input::-webkit-input-placeholder {
+    color: #333
+}
+
+.manar-warper .manar-top-bar .mana-searchbox button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #21398b
+}
+
+.manar-warper .manar-top-bar .mana-searchbox .sm-height {
+    height: 32px;
+    line-height: 5px
+}
+
+.manar-warper .navbar {
+    background-color: #eaeaea;
+    height: 50px
+}
+
+.manar-warper .carousel {
+    background: transparent !important;
+    opacity: 1;
+    text-shadow: none;
+    top: 2%;
+    cursor: default
+}
+
+.manar-warper .carousel span {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 8px;
+    width: 30px;
+    height: 50px;
+    line-height: 80px;
+    cursor: pointer;
+    color: #e8e8e8
+}
+
+.manar-warper .carousel span:hover {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.manar-warper .carousel:hover {
+    background: transparent !important
+}
+
+.manar-warper .carousel-control-prev {
+    margin-right: -500px
+}
+
+@media screen and (max-width: 750px) {
+    .manar-warper .hidden-sm-down {
+        display: none
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .manar-warper .see-on-mobile {
+        display: none
+    }
+}
+
+.manar-warper .manar-link>li {
+    margin-right: 7px
+}
+
+.manar-warper .manar-link>li::last-child::after {
+    contain: "&nbsp;"
+}
+
+.manar-warper .manar-link>li:not(:last-child)::after {
+    content: '|';
+    font-size: 14px;
+    color: #0a1e75
+}
+
+.manar-warper .manar-link>li>a {
+    color: #0a1e75;
+    padding: 0 11px
+}
+
+.manar-warper .manar-link>li>a>i {
+    font-size: 80%
+}
+
+.manar-warper .manar-link>li>a>span {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 85%
+}
+
+.manar-warper .manar-top-logo-inner {
     background-image: url(../images/logo.png);
     width: 103px;
     height: 140px;
@@ -65,25 +186,119 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    position: absolute;
+    top: -7px;
+    z-index: 5
 }
 
-@media screen and ( max-width: 750px) {
+.manar-warper .manar-top-logo-inner img {
+    transition: all 0.3s ease
+}
+
+.manar-warper .manar-top-logo-inner a:hover img {
+    transform: scale(1.03)
+}
+
+.manar-warper .manar-sub-top-nav .logoBrendManar {
+    margin-left: 39%
+}
+
+@media screen and (max-width: 750px) {
     .hidden-sm-down {
-        display: none;
+        display: none
     }
 }
 
-@media screen and ( min-width: 751px) {
+@media screen and (min-width: 751px) {
     .see-on-mobile {
-        display: none;
+        display: none
     }
 }
 
 @media screen and (max-width: 992px) {
     .hidden-sm-down {
-        display: none;
+        display: none
     }
     .see-on-mobile {
-        display: block;
+        display: block
     }
+}
+
+@media screen and (min-width: 993px) {
+    .manar-top-bar {
+        max-width: 1200px
+    }
+}
+
+@media (max-width: 575px) {
+    .justify-content-xs-center {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important
+    }
+    .manar-top-form {
+        width: 92%;
+        margin: 0 auto;
+        padding: 5px 8px
+    }
+    .manar-top-form input {
+        width: 74%;
+        margin-right: 9px
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+    .manar-top-form input {
+        width: 38% !important
+    }
+}
+
+@media (min-width: 776px) {
+    .manar-shrink-nav-indesk {
+        width: 70%
+    }
+    .manar-sub-top-nav nav div ul li {
+        margin-right: 9px
+    }
+    .manar-sub-top-nav nav div ul li a {
+        text-transform: uppercase;
+        color: #565555 !important;
+        font-weight: bolder;
+        transition: color 0.6s ease-in-out
+    }
+    .manar-sub-top-nav nav div ul li a:hover {
+        color: grey !important
+    }
+}
+
+.manar-slider-info span {
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -56px;
+    left: -35px;
+    border: 5px solid white;
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 0 !important;
+    padding: 0;
+    display: block;
+    margin: 0;
+    background-color: #01a6a0 !important;
+}
+
+.manar-slider-info p {}
+
+.manar-slider-info>div {
+    position: relative;
+}
+
+.manar-slider-info {
+    background-color: #4356add1;
+    width: 100%;
+    position: absolute;
+    top: -482%;
+    padding: 41px 21px;
+    line-height: 25px;
+    height: 150px;
 }

@@ -3,41 +3,145 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: none;
+.manar-warper {
+    .bg-light {
+        background-color: #eaeaea!important;
     }
-}
-
-.manar-top-bar {
-    border-top: 4px solid #01a6a0;
-    .manar-link {
-        >li {
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .manar-top-bar {
+        border-top: 4px solid #01a6a0;
+        padding: 7px;
+        height: 50px;
+        .manar-logo {
+            position: relative;
+        }
+        .manar-link>li {
             margin-right: 7px;
-            &::last-child {
-                &::after {
-                    contain: "&nbsp;";
-                }
+            &::last-child::after {
+                contain: "&nbsp;";
             }
-            &:not(:last-child) {
-                &::after {
-                    content: '|';
-                    font-size: 14px;
-                    color: #0a1e75;
-                }
+            &:not(:last-child)::after {
+                content: '|';
+                font-size: 14px;
+                color: #0a1e75;
             }
             >a {
                 color: #0a1e75;
                 padding: 0 11px;
-                >i {
+                > {
+                    i {
+                        font-size: 80%;
+                    }
+                    span {
+                        margin-left: 5px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 85%;
+                    }
+                }
+            }
+        }
+        .manar-top-logo-inner {
+            position: relative;
+            z-index: 999;
+            margin-right: 40px;
+            img {
+                box-shadow: 0px 0px 20px 1px rgba(48, 48, 46, 0.2);
+                margin-top: -10px;
+            }
+        }
+        .mana-searchbox {
+            margin-top: 5px;
+            float: right;
+            input {
+                width: 207px;
+                height: 30px;
+                display: inline-block;
+                box-shadow: none;
+                border: 1px solid#bebebd;
+                color: #333;
+                &::-webkit-input-placeholder {
+                    color: #333;
+                }
+            }
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                color: #21398b;
+            }
+            .sm-height {
+                height: 32px;
+                line-height: 5px;
+            }
+        }
+    }
+    .navbar {
+        background-color: #eaeaea;
+        height: 50px;
+    }
+    .carousel {
+        background: transparent!important;
+        opacity: 1;
+        text-shadow: none;
+        top: 2%;
+        cursor: default;
+        span {
+            background-color: rgba(0, 0, 0, .2);
+            font-size: 8px;
+            width: 30px;
+            height: 50px;
+            line-height: 80px;
+            cursor: pointer;
+            color: #e8e8e8;
+            &:hover {
+                background-color: rgba(0, 0, 0, .4);
+            }
+        }
+        &:hover {
+            background: transparent!important;
+        }
+    }
+    .carousel-control-prev {
+        margin-right: -500px;
+    }
+    @media screen and ( max-width: 750px) {
+        .hidden-sm-down {
+            display: none;
+        }
+    }
+    @media screen and ( min-width: 751px) {
+        .see-on-mobile {
+            display: none;
+        }
+    }
+    .manar-link>li {
+        margin-right: 7px;
+        &::last-child::after {
+            contain: "&nbsp;";
+        }
+        &:not(:last-child)::after {
+            content: '|';
+            font-size: 14px;
+            color: #0a1e75;
+        }
+        >a {
+            color: #0a1e75;
+            padding: 0 11px;
+            > {
+                i {
                     font-size: 80%;
                 }
-                >span {
+                span {
                     margin-left: 5px;
                     text-transform: uppercase;
                     font-weight: 600;
@@ -47,51 +151,94 @@ a {
         }
     }
     .manar-top-logo-inner {
-        position: relative;
-        z-index: 999;
-        margin-right: 40px;
         img {
-            box-shadow: 0px 0px 20px 1px rgba(48, 48, 46, 0.2);
-            margin-top: -10px;
+            transition: all 0.3s ease;
         }
+        a:hover img {
+            transform: scale(1.03);
+        }
+        background-image: url(../images/logo.png);
+        width: 103px;
+        height: 140px;
+        box-shadow: 1px 1px 4px 0px #c7c7c7;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -7px;
+        z-index: 5;
     }
-    .mana-searchbox {
-        margin-top: 5px;
-        float: right;
-        input {
-            width: 207px;
-            height: 30px;
-            display: inline-block;
-            box-shadow: none;
-            border: 1px solid#bebebd;
-            color: #333;
-            &::-webkit-input-placeholder {
-                color: #333;
-            }
-        }
-        button {
-            background: none;
-            border: none;
-            outline: none;
-            font-size: 18px;
-            color: #21398b;
+    .manar-sub-top-nav {
+        .logoBrendManar {
+            margin-left: 39%;
         }
     }
 }
 
-.navbar {
-    background-color: #eaeaea;
-    height: 50px;
-}
-
-@media screen and ( max-width: 750px) {
+@media screen and (max-width: 750px) {
     .hidden-sm-down {
         display: none;
     }
 }
 
-@media screen and ( min-width: 751px) {
+@media screen and (min-width: 751px) {
     .see-on-mobile {
         display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hidden-sm-down {
+        display: none;
+    }
+    .see-on-mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .manar-top-bar {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .justify-content-xs-center {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .manar-top-form {
+        width: 92%;
+        margin: 0 auto;
+        padding: 5px 8px;
+        input {
+            width: 74%;
+            margin-right: 9px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+    .manar-top-form input {
+        width: 38% !important;
+    }
+}
+
+@media (min-width: 776px) {
+    .manar-shrink-nav-indesk {
+        width: 70%;
+    }
+    .manar-sub-top-nav nav div ul li {
+        margin-right: 9px;
+        a {
+            text-transform: uppercase;
+            color: #565555 !important;
+            font-weight: bolder;
+            transition: color 0.6s ease-in-out;
+            &:hover {
+                color: grey !important;
+            }
+        }
     }
 }
