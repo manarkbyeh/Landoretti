@@ -1,0 +1,11 @@
+{
+    "git.ignoreLimitWarning": true,
+        "liveSassCompile.settings.formats": [
+            {
+                "format": "compressed",
+                "extensionName": ".min.css",
+                "savePath": "/assets/css"
+            }
+        ],
+        "liveSassCompile.settings.generateMap": false
+}

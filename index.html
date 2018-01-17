@@ -8,52 +8,54 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/app.min.css">
     <title>Hello, world!</title>
 </head>
 
 <body class="">
-    <div class="manar-warper ">
+    <div class="wraper">
         <div class="manar-top-bar ">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 manar-logo align-items-md-center
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 manar-logo align-items-md-center
                  d-flex justify-content-lg-end justify-content-sm-center justify-content-xs-center justify-content-md-end">
 
-                    <div class="manar-top-logo-inner hidden-sm-down">
-                        <a href=""><img src="assets/images/logo.png" alt="Logo"></a>
-                    </div>
-                    <!--<div class="manar-top-logo-text-inner see-on-mobile"><a href="">Landerotti</a></div>-->
-                </div>
-                <div class="col-sm-12 col-md-8 col-lg-4 manar-link ">
-                    <div class="manar-link justify-content-center d-flex p-2 justify-content-md-start ">
-                        <li class="linked">
-                            <a href="">
-                                <i class="fa fa-bars"></i>
-                                <span>whatchlist</span>
-                            </a>
-                        </li>
-                        <li class="linked">
-                            <a href="">
-                                <img src="assets/images/User.png" alt="User">
-                                <span>porfile</span>
-                            </a>
-                        </li>
-                        <li class="linked">
-                            <a href="">
+                        <div class="manar-top-logo-inner hidden-sm-down">
 
-                                <span>logout</span>
-                            </a>
-                        </li>
-
+                        </div>
+                        <!--<div class="manar-top-logo-text-inner see-on-mobile"><a href="">Landerotti</a></div>-->
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 mana-searchbox ">
-                    <form class="form-inline my-2 my-lg-0 manar-top-form d-flex justify-content-xs-center justify-content-md-center justify-content-sm-center">
-                        <input class="sm-height form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="sm-height btn btn-light my-2 my-sm-0" type="submit">
+                    <div class="col-sm-12 col-md-8 col-lg-4 manar-link ">
+                        <div class="manar-link justify-content-center d-flex p-2 justify-content-md-start ">
+                            <li class="linked">
+                                <a href="">
+                                    <i class="fa fa-bars"></i>
+                                    <span>whatchlist</span>
+                                </a>
+                            </li>
+                            <li class="linked">
+                                <a href="">
+                                    <img src="./assets/images/User.png" alt="User">
+                                    <span>porfile</span>
+                                </a>
+                            </li>
+                            <li class="linked">
+                                <a href="">
+
+                                    <span>logout</span>
+                                </a>
+                            </li>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 mana-searchbox ">
+                        <form class="form-inline my-2 my-lg-0 manar-top-form d-flex justify-content-xs-center justify-content-md-center justify-content-sm-center">
+                            <input class="sm-height form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="sm-height btn btn-light my-2 my-sm-0" type="submit">
                             <i class="fa fa-search"></i>
                         </button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,11 +88,11 @@
                         </li>
 
                     </ul>
-                    <div class="mana-lang-bar d-flex">
+                    <ul class="manar-lang-bar d-flex">
                         <li>NL</li>
                         <li>FR</li>
                         <li>EN</li>
-                    </div>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -103,34 +105,38 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block img-fluid" src="/assets/images/slider/slide1.jpg" alt="First slide">
+                    <img class="d-block img-fluid" src="./assets/images/slider/slide1.jpg" alt="First slide">
                     <!-- <div class="carousel-caption d-none d-md-block"> -->
-                    <div class="carousel-caption   ">
+                    <div class="carousel-caption">
                         <div class="manar-slider-info">
-                            <div>
-                                <span> </span>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus nostrum cupiditate voluptatum libero voluptates voluptate nobis enim architecto debitis corrupti veniam, cum,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block img-fluid" src="/assets/images/slider/slide2.png" alt="Third slide">
-                    <div class="carousel-caption  ">
-                        <div class="manar-slider-info">
-                            <span> </span>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus nostrum cupiditate voluptatum libero voluptates voluptate nobis enim architecto debitis corrupti veniam, cum,
+                            <p class="manar-slide-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
+                                eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
+                                in, viverra quis, feugiat a.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid" src="/assets/images/slider/slide3.png" alt="Third slide">
-                    <div class="carousel-caption   ">
+                    <img class="d-block img-fluid" src="./assets/images/slider/slide2.png" alt="Third slide">
+                    <div class="carousel-caption">
                         <div class="manar-slider-info">
-                            <span> </span>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus nostrum cupiditate voluptatum libero voluptates voluptate nobis enim architecto debitis corrupti veniam, cum,
+                            <p class="manar-slide-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
+                                eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
+                                in, viverra quis, feugiat a.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./assets/images/slider/slide3.png" alt="Third slide">
+                    <div class="carousel-caption">
+                        <div class="manar-slider-info">
+                            <p class="manar-slide-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
+                                eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
+                                in, viverra quis, feugiat a.
                             </p>
                         </div>
                     </div>
@@ -148,15 +154,228 @@
         <!-- fin slidesho -->
         <!--  begin van how does it work -->
         <div class="manar-contafter-slider container  ">
-            <h3>How does it work</h3>
-            <div class="row">
-                <div class="col-lg-4 col-sm-12">vbn</div>
-                <div class="col-lg-4 col-sm-12">vbn</div>
-                <div class="col-lg-4 col-sm-12">vbn</div>
+            <h3>How does it work ?</h3>
+            <div class="row row-padded homepage-grid p-t text-center manar-icon-info">
+
+                <div class="col-sm-4">
+                    <img class="homepage-grid-icon" src="./assets/images/how-work-img-1.png">
+                    <h5><strong>Sign up</strong></h5>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="homepage-grid-icon" src="./assets/images/how-work-img-2.png">
+                    <h5><strong>Make deals</strong></h5>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="homepage-grid-icon" src="./assets/images/how-work-img-3.png">
+                    <h5><strong>Everyone happy!</strong></h5>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+
             </div>
         </div>
-        <!--  einde van how does it work -->
+        <!--  einde van  how does it work -->
+        <!-- most popular -->
+        <section class="  text-center text-bg">
+            <div class="container">
+                <h1 class=" k">Most popular this week <i class="fa fa-angle-down"></i></h1>
+                <div class="row image-wrap-maar">
 
+                    <div class="col-lg-4 col-md-6 col-sm-12 mn-left">
+                        <div class="manar-image-overal is-manar-overal"><img src="./assets/images/mockup-img2.png" alt="">
+                            <div class="manar-overal"></div>
+                        </div>
+                        <div class="manar-image-overal is-manar-overal"><img src="./assets/images/moeilijk.png" alt="">
+                            <div class="manar-overal"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-12 mn-right is-manar-overal">
+                        <div class="manar-overal"></div>
+                        <img src="./assets/images/mockup-img.png" alt="" class="img-responsive manar-image-overal-right">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--einde  most popular -->
+        <footer class="manar-footer-content ">
+
+            <div class="row container manar-footer-selector">
+                <div class="col-sm-12 col-md-4 col-lg-1 hidden-sm-down"></div>
+                <div class="col-sm-12 col-md-4 col-lg-3 hidden-sm-down">
+                    <div>
+                        <h6><strong>Help</strong></h6>
+                        <p><a href="#">Login</a></p>
+                        <p><a href="#">Register</a></p>
+                    </div>
+                    <div>
+                        <h6><strong>Help</strong></h6>
+                        <p><a href="#">Terms of Service </a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">FAQ</a></p>
+                        <p><a href="#">CONTACT</a></p>
+                        <p><a href="#">About us</a></p>
+                    </div>
+                    <div>
+
+
+
+                        <h6><strong>LANGUAGES</strong></h6>
+                        <p><a href="#">Nederland </a></p>
+                        <p><a href="#">   Françai</a></p>
+                        <p><a href="#">
+                                    English</a></p>
+
+                    </div>
+
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 hidden-sm-down">
+                    <div>
+                        <h6><strong>STYLE</strong></h6>
+                        <p><a href="#">     Abstract</a></p>
+                        <p><a href="#">     African American</a></p>
+
+                        <h6><strong>  Asian Contemporary</strong></h6>
+                        <p><a href="#">   Conceptual </a></p>
+                        <p><a href="#">      Contemporary</a></p>
+                        <p><a href="#">  Emerging Artists</a></p>
+                        <p><a href="#">      Figurative</a></p>
+                        <p><a href="#">   Middle Eastern Contemporary</a></p>
+                        <p><a href="#">             Minimalism</a></p>
+                        <p><a href="#">  Modern</a></p>
+                        <p><a href="#">           Pop</a></p>
+                        <p><a href="#">              Urban</a></p>
+                        <p><a href="#">           
+                                        Vintage Photographs</a></p>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 hidden-sm-down sdf">
+                    <div>
+                        <h6><strong>   PRICE</strong></h6>
+                        <p><a href="#">        Up to 5,000</a></p>
+                        <p><a href="#">     5,000-10,000</a></p>
+
+
+                        <p><a href="#">      10,000-25,000 </a></p>
+                        <p><a href="#">    25,000-50,000</a></p>
+                        <p><a href="#">    50,000-100,000</a></p>
+
+                    </div>
+                    <div>
+                        <h6><strong>    ERA</strong></h6>
+                        <p><a href="#"> Pre-War</a></p>
+                        <p><a href="#">     1940s-1950s</a></p>
+
+
+                        <p><a href="#">  1960s-1980s </a></p>
+                        <p><a href="#">   1990s-Present</a></p>
+
+                    </div>
+
+                    <div>
+                        <h6><strong>     ENDINGS</strong></h6>
+
+                        <p><a href="#">     Ending this Week</a></p>
+
+
+                        <p><a href="#"> Newly Listed </a></p>
+                        <p><a href="#">  Purchase Now</a></p>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3   ">
+                    <h6><strong>     FIND WHAT YOU NEED</strong></h6>
+                    <div class=" mana-searchbox ">
+                        <form class="form-inline my-2 my-lg-0 manar-mobile-input   ">
+                            <input class="sm-height manar-input form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="sm-height btn btn-light my-2 my-sm-0" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                        </form>
+                    </div>
+                    <div class="manar-contact-footer ">
+                        <h6><strong>     Contact.</strong></h6>
+                        <p> Landoretti ART </p>
+
+
+                        <p> Straatnaam xxx </p>
+                        <p> xxxx, Oostende </p>
+                    </div>
+                    <div>
+                        <p> <i class="fa fa-phone"></i> +xx (0)x xxx xx xx</p>
+                        <p> <i class="fa fa-envelope-o"></i>
+                            <a href="mailto:info@landorettiart.com">info@landorettiart.com</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./assets/images/face.png">
+                        <img src="./assets/images/google.png">
+                        <img src="./assets/images/twitter.png">
+                        <img src="./assets/images/youtube.png">
+
+
+
+                    </div>
+                    <div class="manar-sub-footer">
+                        © 2013 Studio6, Inc. All rights reserved.
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- bottom nav -->
+            <div class="hidden-sm-down manar-bottom-navbar manar-sub-top-nav d-lg-flex justify-content-lg-end bg-light ">
+                <div class="manar-logo-bottom">
+                    <a href=""><img src="./assets/images/logo-bottom.png" alt=""></a>
+                </div>
+                <nav class="  navbar navbar-expand-lg navbar-light  manar-shrink-nav-indesk">
+                    <a class="logoBrendManar navbar-brand see-on-mobile" href="#">Landerotti</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">art</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">isearch</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">myauctions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">mybids</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact</a>
+                            </li>
+
+                        </ul>
+                        <ul class="manar-lang-bar d-flex">
+                            <li>NL</li>
+                            <li>FR</li>
+                            <li>EN</li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <!-- einde bottom nav -->
+        </footer>
     </div>
     <!-- Optional JavaScript -->
 
@@ -164,7 +383,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="/assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

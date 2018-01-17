@@ -1,11 +1,11 @@
-@import "https://fonts.googleapis.com/css?family=Roboto";
+// @import "https://fonts.googleapis.com/css?family=Roboto";
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-.manar-warper {
+.wraper {
     .bg-light {
-        background-color: #eaeaea!important;
+        background-color: #eaeaea !important;
     }
     li {
         list-style: none;
@@ -52,21 +52,19 @@ body {
         .manar-top-logo-inner {
             position: relative;
             z-index: 999;
-            margin-right: 40px;
+            margin-right: 115px;
             img {
                 box-shadow: 0px 0px 20px 1px rgba(48, 48, 46, 0.2);
                 margin-top: -10px;
             }
         }
         .mana-searchbox {
-            margin-top: 5px;
-            float: right;
             input {
                 width: 207px;
                 height: 30px;
                 display: inline-block;
                 box-shadow: none;
-                border: 1px solid#bebebd;
+                border: 1px solid #bebebd;
                 color: #333;
                 &::-webkit-input-placeholder {
                     color: #333;
@@ -90,13 +88,13 @@ body {
         height: 50px;
     }
     .carousel {
-        background: transparent!important;
+        background: transparent !important;
         opacity: 1;
         text-shadow: none;
         top: 2%;
         cursor: default;
         span {
-            background-color: rgba(0, 0, 0, .2);
+            background-color: rgba(0, 0, 0, 0.2);
             font-size: 8px;
             width: 30px;
             height: 50px;
@@ -104,25 +102,25 @@ body {
             cursor: pointer;
             color: #e8e8e8;
             &:hover {
-                background-color: rgba(0, 0, 0, .4);
+                background-color: rgba(0, 0, 0, 0.4);
             }
         }
         &:hover {
-            background: transparent!important;
+            background: transparent !important;
         }
     }
     .carousel-control-prev {
-        margin-right: -500px;
+        justify-content: flex-start;
     }
-    @media screen and ( max-width: 750px) {
-        .hidden-sm-down {
-            display: none;
-        }
+    .carousel-control-next {
+        justify-content: flex-end;
     }
-    @media screen and ( min-width: 751px) {
-        .see-on-mobile {
-            display: none;
-        }
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: 15px;
+        border: 1px solid #ccc;
     }
     .manar-link>li {
         margin-right: 7px;
@@ -151,12 +149,6 @@ body {
         }
     }
     .manar-top-logo-inner {
-        img {
-            transition: all 0.3s ease;
-        }
-        a:hover img {
-            transform: scale(1.03);
-        }
         background-image: url(../images/logo.png);
         width: 103px;
         height: 140px;
@@ -167,11 +159,35 @@ body {
         position: absolute;
         top: -7px;
         z-index: 5;
+        img {
+            transition: all 0.3s ease;
+        }
+        a:hover img {
+            transform: scale(1.03);
+        }
     }
     .manar-sub-top-nav {
         .logoBrendManar {
             margin-left: 39%;
         }
+        .manar-shrink-nav-indesk .manar-lang-bar {
+            margin-bottom: 0;
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wraper .hidden-sm-down {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .wraper .see-on-mobile {
+        display: none;
     }
 }
 
@@ -196,11 +212,7 @@ body {
     }
 }
 
-@media screen and (min-width: 993px) {
-    .manar-top-bar {
-        max-width: 1200px;
-    }
-}
+@media screen and (min-width: 993px) {}
 
 @media (max-width: 575px) {
     .justify-content-xs-center {
@@ -241,4 +253,255 @@ body {
             }
         }
     }
+}
+
+.carousel-caption {
+    .manar-slider-info {
+        >div {
+            position: relative;
+        }
+        background-color: #4155ac;
+        width: 97%;
+        position: absolute;
+        bottom: 395%;
+        height: 159px;
+        margin-left: 5%;
+        &:before {
+            content: '';
+            background-color: #01a6a0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            border-radius: 50px;
+            border: 5px solid #fff;
+        }
+    }
+    .manar-slide-text {
+        padding: 30px;
+        font-size: 13px;
+        text-align: justify;
+    }
+}
+
+.manar-contafter-slider {
+    padding: 30px;
+    text-align: center;
+    h3 {
+        color: #0a1e75;
+        font-size: 37px;
+    }
+}
+
+.manar-icon-info {
+    margin-top: 30px;
+    >div> {
+        h5 {
+            margin-top: 24px;
+        }
+    }
+}
+
+.image-wrap-maar {
+    img {
+        max-width: 98%;
+    }
+}
+
+.text-bg {
+    background-color: #f3f3f3;
+    padding: 50px 0 100px;
+    .k {
+        font-size: 40px;
+        color: #0a1e75;
+        font-family: "Helvetica-Light";
+        margin-bottom: 50px;
+        i {
+            font-size: 25px;
+            width: 27px;
+            height: 27px;
+            border: 1px solid #0f2277;
+            border-radius: 50%;
+        }
+    }
+}
+
+.manar-image-overal {
+    height: 50%;
+    margin-bottom: 2px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.image-wrap-maar {
+    .mn-right {
+        height: 100%;
+    }
+    .mn-left {
+        div {
+            height: 145px;
+            margin-bottom: 8px;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.row.image-wrap-maar {
+    padding: 0 !important;
+    >div {
+        padding: 0 !important;
+    }
+}
+
+.manar-overal {
+    &::before {
+        font-family: "FontAwesome";
+        content: "\f002";
+        position: absolute;
+        top: 44%;
+        font-size: 30px;
+        left: 48%;
+        color: white;
+    }
+    position: absolute;
+    background-image: url(../images/Overlay.png);
+    width: 98%;
+    z-index: 5555;
+    height: inherit;
+    top: 0;
+    left: 6px;
+    visibility: hidden;
+    transition: all 0.5 ease-in;
+    -webkit-transition: all 0.5 ease-in;
+    -o-transition: all 0.5 ease-in;
+    -moz-transition: all 0.5 ease-in;
+}
+
+.is-manar-overal {
+    &:hover>.manar-overal {
+        visibility: visible;
+    }
+    position: relative;
+}
+
+.manar-footer-content {
+    border-top: 1px solid #eaeaea;
+    width: 100%;
+}
+
+.manar-footer-selector {
+    .sdf {
+        border-right: 1px solid #eaeaea;
+    }
+    >div {
+        padding: 48px 0;
+        padding-left: 30px;
+        > {
+            div> {
+                p {
+                    padding: 0;
+                    line-height: 10px;
+                    color: #6f6f6f;
+                    >a {
+                        color: #01a6a0;
+                        font-weight: normal;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .manar-footer-selector>div> {
+        h6 {
+            text-align: center;
+        }
+        div {
+            > {
+                h6 {
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+                p {
+                    >a {
+                        font-size: 20px !important;
+                        line-height: 23px;
+                    }
+                    font-size: 20px !important;
+                    line-height: 23px;
+                }
+            }
+            &:last-child {
+                padding-bottom: 31px;
+            }
+            > {
+                p,
+                h6 {
+                    text-align: center;
+                }
+            }
+            text-align: center;
+        }
+    }
+    .manar-sub-footer {
+        position: relative !important;
+        bottom: -9px !important;
+        font-size: 15px !important;
+        color: black !important;
+    }
+    .manar-mobile-input {
+        width: 81%;
+        margin: 0 auto;
+        input {
+            width: 78% !important;
+            height: 40px;
+        }
+    }
+}
+
+.manar-input.form-control {
+    padding: 1px 0px 2px 6px !important;
+    width: 70%;
+    font-size: 15px;
+}
+
+.manar-contact-footer {
+    padding-top: 9px;
+}
+
+.manar-bottom-navbar {
+    position: relative;
+}
+
+.manar-logo-bottom {
+    a {
+        transition: all 0.6s ease-in;
+        &:hover>img {
+            transform: scale(1.03);
+        }
+    }
+    position: absolute;
+    z-index: 44;
+    left: 9%;
+    bottom: 1px;
+}
+
+.manar-bottom-navbar {
+    border-bottom: 4px solid #01a6a0;
+}
+
+.manar-sub-footer {
+    position: absolute;
+    bottom: 62px;
+    font-size: small;
+    color: grey;
 }
