@@ -1,5 +1,4 @@
-// @import "https://fonts.googleapis.com/css?family=Roboto";
-body {
+    body {
     font-family: "Roboto", sans-serif;
 }
 
@@ -212,8 +211,6 @@ body {
     }
 }
 
-@media screen and (min-width: 993px) {}
-
 @media (max-width: 575px) {
     .justify-content-xs-center {
         -webkit-box-pack: center !important;
@@ -257,15 +254,15 @@ body {
 
 .carousel-caption {
     .manar-slider-info {
-        >div {
-            position: relative;
-        }
         background-color: #4155ac;
         width: 97%;
         position: absolute;
         bottom: 395%;
         height: 159px;
         margin-left: 5%;
+        >div {
+            position: relative;
+        }
         &:before {
             content: '';
             background-color: #01a6a0;
@@ -297,17 +294,13 @@ body {
 
 .manar-icon-info {
     margin-top: 30px;
-    >div> {
-        h5 {
-            margin-top: 24px;
-        }
+    >div>h5 {
+        margin-top: 24px;
     }
 }
 
-.image-wrap-maar {
-    img {
-        max-width: 98%;
-    }
+.image-wrap-maar img {
+    max-width: 98%;
 }
 
 .text-bg {
@@ -361,15 +354,6 @@ body {
 }
 
 .manar-overal {
-    &::before {
-        font-family: "FontAwesome";
-        content: "\f002";
-        position: absolute;
-        top: 44%;
-        font-size: 30px;
-        left: 48%;
-        color: white;
-    }
     position: absolute;
     background-image: url(../images/Overlay.png);
     width: 98%;
@@ -382,18 +366,28 @@ body {
     -webkit-transition: all 0.5 ease-in;
     -o-transition: all 0.5 ease-in;
     -moz-transition: all 0.5 ease-in;
+    &::before {
+        font-family: "FontAwesome";
+        content: "\f002";
+        position: absolute;
+        top: 44%;
+        font-size: 30px;
+        left: 48%;
+        color: white;
+    }
 }
 
 .is-manar-overal {
+    position: relative;
     &:hover>.manar-overal {
         visibility: visible;
     }
-    position: relative;
 }
 
 .manar-footer-content {
     border-top: 1px solid #eaeaea;
     width: 100%;
+    margin-top: 58px;
 }
 
 .manar-footer-selector {
@@ -403,18 +397,14 @@ body {
     >div {
         padding: 48px 0;
         padding-left: 30px;
-        > {
-            div> {
-                p {
-                    padding: 0;
-                    line-height: 10px;
-                    color: #6f6f6f;
-                    >a {
-                        color: #01a6a0;
-                        font-weight: normal;
-                        font-size: 13px;
-                    }
-                }
+        >div>p {
+            padding: 0;
+            line-height: 10px;
+            color: #6f6f6f;
+            >a {
+                color: #01a6a0;
+                font-weight: normal;
+                font-size: 13px;
             }
         }
     }
@@ -426,18 +416,19 @@ body {
             text-align: center;
         }
         div {
+            text-align: center;
             > {
                 h6 {
                     font-weight: bold;
                     font-size: 22px;
                 }
                 p {
+                    font-size: 20px !important;
+                    line-height: 23px;
                     >a {
                         font-size: 20px !important;
                         line-height: 23px;
                     }
-                    font-size: 20px !important;
-                    line-height: 23px;
                 }
             }
             &:last-child {
@@ -449,7 +440,6 @@ body {
                     text-align: center;
                 }
             }
-            text-align: center;
         }
     }
     .manar-sub-footer {
@@ -483,16 +473,16 @@ body {
 }
 
 .manar-logo-bottom {
+    position: absolute;
+    z-index: 44;
+    left: 9%;
+    bottom: 1px;
     a {
         transition: all 0.6s ease-in;
         &:hover>img {
             transform: scale(1.03);
         }
     }
-    position: absolute;
-    z-index: 44;
-    left: 9%;
-    bottom: 1px;
 }
 
 .manar-bottom-navbar {
@@ -505,3 +495,266 @@ body {
     font-size: small;
     color: grey;
 }
+
+.section-text::after {
+    content: " ";
+    width: 25px;
+    height: 25px;
+    background: #01c3c1;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    opacity: 1;
+}
+
+.manar-bg-img {
+    background-image: url(../images/Vitrine-imgarea.png);
+    height: 536px;
+    background-size: 100%;
+    position: relative;
+    img {}
+}
+
+.section-text {
+    position: absolute;
+    right: 2%;
+    top: 14%;
+    width: 293px;
+    p {}
+}
+
+.mara-card-selector {
+    color: #fff;
+    background-color: rgba(1, 32, 166, 0.65);
+    .card-block,
+    .card-footer,
+    .card-header {
+        padding: 20px 21px;
+    }
+    .card-block {}
+    .card-footer {
+        a {
+            color: #01a6a0;
+            font-size: 26px;
+        }
+        border-top: 1px solid white;
+        background: #f9f9f9;
+    }
+    .card-header {
+        border-bottom: 1px solid white;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-text {
+        position: relative;
+        width: 293px;
+        left: 14%;
+    }
+    .manar-bg-img {
+        height: 536px !important;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 660px) {
+    .section-text {
+        left: 30% !important;
+    }
+}
+
+.manar-order>div {
+    &:first-child {
+        text-align: right;
+        font-weight: bold;
+    }
+    &:nth-child(2) li {
+        &:not(:last-child)::after {
+            content: "|";
+            position: relative;
+            right: -6px;
+            color: gray;
+        }
+        margin-right: 10px;
+        a {
+            color: grey;
+        }
+        &.active {
+            border-bottom: 2px solid grey;
+        }
+    }
+    &:last-child>div {}
+}
+
+.manar-sortedby {
+    padding: 21px 0;
+}
+
+@media (max-width: 900px) {
+    .manar-order {
+        * {
+            text-align: center !important;
+        }
+        >div {
+            padding: 12px 0;
+            &:nth-child(2) li {
+                display: block !important;
+                padding: 5px;
+                font-size: 19px;
+                a {}
+                &.active {
+                    color: #000;
+                    font-weight: bold;
+                    border: 0;
+                }
+                &:not(:last-child)::after {
+                    content: " " !important;
+                }
+            }
+        }
+    }
+}
+
+.filter {
+    border-bottom: 2px solid #c9c9c9;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    .sort-by {
+        margin-top: 8px;
+        h6 {
+            text-transform: uppercase;
+            color: #000;
+            font-weight: bold;
+            display: inline-block;
+        }
+        ul {
+            margin-bottom: 0;
+            display: inline-block;
+        }
+    }
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    padding-left: 0;
+    list-style: none;
+}
+
+.filter {
+    .sort-by ul li {
+        display: inline-block;
+        a {
+            color: #6f6c6c;
+            padding-right: 10px;
+            border-right: 1px solid #a09494;
+        }
+        &.active a {
+            color: #7f7f7f;
+            font-weight: bold;
+        }
+    }
+    .ad-options {
+        text-align: right;
+        h6 {
+            display: inline-block;
+            color: #364689;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        i {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: #c8c5c5;
+            color: #fff;
+            text-align: center;
+            line-height: 28px;
+            font-size: 28px;
+            position: relative;
+            top: 5px;
+            cursor: pointer;
+        }
+    }
+    .list {
+        display: none;
+        margin-top: 50px;
+        .menu {
+            display: inline-block;
+            h4 {
+                display: inline-block;
+                color: #000;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            li {
+                margin-left: 10px;
+                margin-bottom: 5px;
+            }
+        }
+        >div>div>div>p>a {
+            color: #6f6c6c;
+            font-size: 14px;
+        }
+    }
+}
+
+.overzicht-items {
+    margin-top: 20px;
+    .big-img-container {
+        background-color: #d9ebeb;
+        padding: 0;
+        height: 822px;
+    }
+    .part {
+        &.big-img {
+            height: 822px;
+            .big-img-text {
+                width: 66%;
+                min-height: 134px;
+                position: absolute;
+                bottom: 5%;
+                left: 17%;
+                h2 {
+                    font-family: Helvetica;
+                    font-size: 35px;
+                    font-weight: 100;
+                    margin-bottom: 30px;
+                    color: #616161;
+                }
+                p {
+                    padding-left: 4%;
+                    color: #434343;
+                    font-family: "Arial MT";
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+            }
+        }
+        height: 250px;
+        position: relative;
+        .part {
+            height: 250px;
+            position: relative;
+        }
+    }
+    .manarrotatison {
+        transform: rotate(90deg);
+    }
+    .part:hover>.more {
+        display: block;
+    }
+    .overzicht-pagination li {
+        a {
+            padding: 6px 5px;
+            border: none;
+            color: #6f6c6c;
+            font-weight: bold;
+        }
+        display: inline-block;
+    }
