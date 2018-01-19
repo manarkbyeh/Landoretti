@@ -2,14 +2,41 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landoretti - newAuction</title>
+    <meta name="google-site-verification" content="google04aefd3631d6737c">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Landoretti - Overzicht">
+    <meta name="description" content="Landoretti veilingsite kunstmerk" />
+    <meta name="keywords" content="veiling, kunstwerk" />
+    <meta property="og:url" content="landoretti.manar.kbyeh.mtantwerp.eu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Landoretti" />
+    <meta property="og:description" content="Landoretti kunstmerk website" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta name="author" content="Manar">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/app.min.css">
-    <title>Hello, world!</title>
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+    <style>
+        .container .mix {
+            display: none
+        }
+        
+        .manar-card {
+            height: 426px
+        }
+    </style>
 </head>
 
 <body class="">
@@ -25,28 +52,8 @@
                         </div>
                         <!--<div class="manar-top-logo-text-inner see-on-mobile"><a href="">Landerotti</a></div>-->
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-4 manar-link ">
-                        <div class="manar-link justify-content-center d-flex p-2 justify-content-md-start ">
-                            <li class="linked">
-                                <a href="">
-                                    <i class="fa fa-bars"></i>
-                                    <span>whatchlist</span>
-                                </a>
-                            </li>
-                            <li class="linked">
-                                <a href="">
-                                    <img src="./assets/images/User.png" alt="User">
-                                    <span>porfile</span>
-                                </a>
-                            </li>
-                            <li class="linked">
-                                <a href="">
+                    <div class="col-sm-12 col-md-8 col-lg-4 manar-link " id="manar-user-auth">
 
-                                    <span>logout</span>
-                                </a>
-                            </li>
-
-                        </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4 mana-searchbox ">
                         <form class="form-inline my-2 my-lg-0 manar-top-form d-flex justify-content-xs-center justify-content-md-center justify-content-sm-center">
@@ -69,10 +76,10 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">art</a>
+                            <a class="nav-link" href="overzicht.html">art</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">isearch</a>
@@ -81,7 +88,7 @@
                             <a class="nav-link" href="#">myauctions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">mybids</a>
+                            <a class="nav-link" href="newaction.html">mybids</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">contact</a>
@@ -125,24 +132,23 @@
                 <ul class="list-unstyled overzicht-pagination float-left p-2">
                     <ol class="breadcrumb manar-breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">option</a></li>
+                        <li class="breadcrumb-item"><a href="#">Jaser pope</a></li>
+                        <li class="breadcrumb-item"><a href="#">my acuion</a></li>
                     </ol>
                 </ul>
 
                 <div style="clear:both;"></div>
             </div>
-            <h5>Add new acuion</h5>
+            <h1>Add new auction</h1>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="alert alert-danger top-alert" role="alert">
-                        <h5><i class="fa fa-circle"></i>This is a danger alert—check it out!</h5>
-                        <h5><i class="fa fa-circle"></i>This is a danger alert—check it out!</h5>
-                        <h5><i class="fa fa-circle"></i>This is a danger alert—check it out!</h5>
+                    <div class="alert alert-danger top-alert hide" id="manar-msg-error" role="alert">
+
                     </div>
                 </div>
             </div>
             <div class="manar-drop-dow">
-                <form action="#" enctype="multipart/form-data">
+                <form action="#" enctype="multipart/form-data" id="form-dff">
                     <div class="contentform">
 
                         <div class="row">
@@ -150,75 +156,74 @@
                                 <div class="dropdown drop-down-selector">
 
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Dropdown button
+                                            Style
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Abstract</a>
+                                        <a class="dropdown-item" href="#">African American</a>
+                                        <a class="dropdown-item" href="#">Asian Contemporary</a>
+                                        <a class="dropdown-item" href="#">Conceptual</a>
+                                        <a class="dropdown-item" href="#">Contemporary</a>
+                                        <a class="dropdown-item" href="#">Figurative</a>
+                                        <a class="dropdown-item" href="#">Middle Eastern Contemporary</a>
+                                        <a class="dropdown-item" href="#">Modern</a>
+
+                                        <a class="dropdown-item" href="#">pop</a>
+                                        <a class="dropdown-item" href="#">Urban</a>
+                                        <a class="dropdown-item" href="#">Vintage Photographs</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 col-md-8 col-lg-8">
-                                <label for="inputPassword5">Password</label>
-                                <input type="text" class="form-control" placeholder=".col-3">
+                                <label for="Auctiontitle">Auction title</label>
+                                <input id="auction" type="text" class="form-control" placeholder="Auction title">
+
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <input type="text" class="form-control" placeholder=".col-4">
+                                <label for="Year">Year</label>
+                                <input id="year" type="text" class="form-control" placeholder="XXXX">
+
                             </div>
                         </div>
-                        <div class="row border-selector-input">
+                        <div class="row">
                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">	&#x20ac;</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <label for="inputPassword5">Width</label>
+                                <input id="width" type="text" class="form-control" placeholder="XXXX">
 
-                                </div>
-                            </div>
-                            <div class=" col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">	&#x20ac;</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-
-                                </div>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">	&#x20ac;</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <label for="inputPassword5">Height</label>
+                                <input id="height" type="text" class="form-control " placeholder="XXXX">
 
-                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <label for="Depth">Depth <small>(optionnal)</small></label>
+                                <input id="depth" type="text" class="form-control" placeholder="XXXX">
+
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <label for="inputPassword5">Password</label>
-                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                <label for="Description">Description</label>
+                                <textarea id="description" class="form-control" placeholder="Describe your auction as thorought as possible"></textarea>
+
                             </div>
                             <div class="col-12">
-                                <label for="inputPassword5">Password</label>
-                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                <label for="Condtion">Condtion</label>
+                                <textarea id="condtion" class="form-control" placeholder="What's the condition of the artwork?"></textarea>
+
                             </div>
                             <div class="col-12">
-                                <label for="inputPassword5">Password</label>
-                                <input type="text" class="form-control" placeholder=".col-3">
+                                <label for="Origine">Origine</label>
+                                <input id="origine" type="text" class="form-control" - placeholder="What's the origine of the artwork?">
+
                             </div>
 
                         </div>
                         <div class="row">
-                            <label for="">test</label>
+                            <label for="">Photos</label>
                             <div class="col-12">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ducimus assumenda libero!
                             </div>
@@ -228,47 +233,86 @@
                                 <div class="image-grad d-flex align-items-center justify-content-center">
                                     <label for="file">Choose file to upload</label>
                                     <input class="hide" type="file" id="file" name="file" multiple>
+                                    <i class="fa fa-check fa-fw imagecheck" style="display: none;"></i>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
                                 <div class="image-grad d-flex align-items-center justify-content-center">
                                     <label for="file">Choose file to upload</label>
-                                    <input class="hide" type="file" id="file" name="file" multiple>
+                                    <input class="hide" type="file" name="file" multiple>
+                                    <i class="fa fa-check fa-fw imagecheck" style="display: none;"></i>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 ">
                                 <div class="image-grad d-flex align-items-center justify-content-center">
                                     <label for="file">Choose file to upload</label>
-                                    <input class="hide" type="file" id="file" name="file" multiple>
+                                    <input class="hide" type="file" name="file" multiple>
+                                    <i class="fa fa-check fa-fw imagecheck" style="display: none;"></i>
                                 </div>
                             </div>
 
                         </div>
                         <h3>pricing</h3>
+                        <div class="row border-selector-input">
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <label for="inputPassword5">Maximum estimate price</label>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">	&#x20ac;</span>
+                                    </div>
+                                    <input id="price1" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                                </div>
+                            </div>
+                            <div class=" col-sm-12 col-md-4 col-lg-4">
+                                <label for="inputPassword5">Maximum estimate price</label>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">	&#x20ac;</span>
+                                    </div>
+                                    <input id="price2" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <label for="inputPassword5">Maximum estimate price</label>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">	&#x20ac;</span>
+                                    </div>
+                                    <input type="text" id="price3" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <input type="text" class="form-control" placeholder=".col-2">
+                                <label for="inputPassword5">End date</label>
+                                <input type="date" id="date" class="form-control" placeholder="XXXX" alt="End date">
+
                             </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <input type="text" class="form-control is-invalid" placeholder=".col-3">
-                            </div>
-                            <div class="col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <input type="text" class="form-control" placeholder=".col-4">
+                            <div class="col-sm-12 col-md-8 col-lg-8 inof-fazz">
+                                <label for="info">Attention</label>
+                                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur corrupti numquam provident quis porro.</div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 col-md-4 col-lg-4">
-                                <label for="inputPassword5">Password</label>
-                                <input type="date" class="form-control" placeholder=".col-2">
+                            <div class="col-sm-12 col-md-12 col-lg-12 ">
+                                <div class="custom-control custom-checkbox  ">
+                                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                    <label class="sds custom-control-label" for="customControlInline">Remember my preference</label>
+                                </div>
                             </div>
-                            <div class="col-sm-12 col-md-8 col-lg-8 inof-fazz">
-                                <label for="info">Efdds</label>
-                                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur corrupti numquam provident quis porro.</div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <button type="submit" class="btn btn-info col-lg-12">Add Auction</button>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4 text-center"><a href="#" class="col-lg-12">Ask question ?</a></div>
                         </div>
                     </div>
 
@@ -337,35 +381,35 @@
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2 hidden-sm-down sdf">
                     <div>
-                        <h6><strong>   PRICE</strong></h6>
-                        <p><a href="#">        Up to 5,000</a></p>
-                        <p><a href="#">     5,000-10,000</a></p>
+                        <h6><strong>PRICE</strong></h6>
+                        <p><a href="#">Up to 5,000</a></p>
+                        <p><a href="#">5,000-10,000</a></p>
 
 
-                        <p><a href="#">      10,000-25,000 </a></p>
-                        <p><a href="#">    25,000-50,000</a></p>
-                        <p><a href="#">    50,000-100,000</a></p>
+                        <p><a href="#">10,000-25,000 </a></p>
+                        <p><a href="#">25,000-50,000</a></p>
+                        <p><a href="#">50,000-100,000</a></p>
 
                     </div>
                     <div>
-                        <h6><strong>    ERA</strong></h6>
-                        <p><a href="#"> Pre-War</a></p>
-                        <p><a href="#">     1940s-1950s</a></p>
+                        <h6><strong>ERA</strong></h6>
+                        <p><a href="#">Pre-War</a></p>
+                        <p><a href="#">1940s-1950s</a></p>
 
 
-                        <p><a href="#">  1960s-1980s </a></p>
-                        <p><a href="#">   1990s-Present</a></p>
+                        <p><a href="#">1960s-1980s </a></p>
+                        <p><a href="#">1990s-Present</a></p>
 
                     </div>
 
                     <div>
-                        <h6><strong>     ENDINGS</strong></h6>
+                        <h6><strong>ENDINGS</strong></h6>
 
-                        <p><a href="#">     Ending this Week</a></p>
+                        <p><a href="#">Ending this Week</a></p>
 
 
-                        <p><a href="#"> Newly Listed </a></p>
-                        <p><a href="#">  Purchase Now</a></p>
+                        <p><a href="#">Newly Listed </a></p>
+                        <p><a href="#">Purchase Now</a></p>
 
                     </div>
 
@@ -400,10 +444,10 @@
                         </p>
                     </div>
                     <div>
-                        <img src="./assets/images/face.png">
-                        <img src="./assets/images/google.png">
-                        <img src="./assets/images/twitter.png">
-                        <img src="./assets/images/youtube.png">
+                        <img src="./assets/images/face.png" alt="facebook">
+                        <img src="./assets/images/google.png" alt="google">
+                        <img src="./assets/images/twitter.png" alt="twitter">
+                        <img src="./assets/images/youtube.png" alt="youtube">
 
 
 
@@ -429,10 +473,10 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">art</a>
+                                <a class="nav-link" href="overzicht.html">art</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">isearch</a>
@@ -441,7 +485,7 @@
                                 <a class="nav-link" href="#">myauctions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">mybids</a>
+                                <a class="nav-link" href="newaction.html">mybids</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">contact</a>
@@ -463,10 +507,24 @@
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="./assets/js/app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112472609-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112472609-1');
+    </script>
+
+
 
 </body>
 
