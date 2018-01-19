@@ -1,4 +1,4 @@
-    body {
+body {
     font-family: "Roboto", sans-serif;
 }
 
@@ -514,7 +514,6 @@
     height: 536px;
     background-size: 100%;
     position: relative;
-    img {}
 }
 
 .section-text {
@@ -522,7 +521,6 @@
     right: 2%;
     top: 14%;
     width: 293px;
-    p {}
 }
 
 .mara-card-selector {
@@ -533,14 +531,13 @@
     .card-header {
         padding: 20px 21px;
     }
-    .card-block {}
     .card-footer {
+        border-top: 1px solid white;
+        background: #f9f9f9;
         a {
             color: #01a6a0;
             font-size: 26px;
         }
-        border-top: 1px solid white;
-        background: #f9f9f9;
     }
     .card-header {
         border-bottom: 1px solid white;
@@ -572,13 +569,13 @@
         font-weight: bold;
     }
     &:nth-child(2) li {
+        margin-right: 10px;
         &:not(:last-child)::after {
             content: "|";
             position: relative;
             right: -6px;
             color: gray;
         }
-        margin-right: 10px;
         a {
             color: grey;
         }
@@ -586,7 +583,6 @@
             border-bottom: 2px solid grey;
         }
     }
-    &:last-child>div {}
 }
 
 .manar-sortedby {
@@ -604,7 +600,6 @@
                 display: block !important;
                 padding: 5px;
                 font-size: 19px;
-                a {}
                 &.active {
                     color: #000;
                     font-weight: bold;
@@ -703,16 +698,21 @@
     }
 }
 
-.overzicht-items {
+.overzichtpart {
     margin-top: 20px;
     .big-img-container {
         background-color: #d9ebeb;
         padding: 0;
         height: 822px;
+        margin-bottom: 50px;
     }
     .part {
+        height: 250px;
+        position: relative;
+        height: 250px;
+        position: relative;
         &.big-img {
-            height: 822px;
+            height: 100%;
             .big-img-text {
                 width: 66%;
                 min-height: 134px;
@@ -736,25 +736,165 @@
                 }
             }
         }
-        height: 250px;
-        position: relative;
-        .part {
-            height: 250px;
-            position: relative;
-        }
     }
-    .manarrotatison {
-        transform: rotate(90deg);
-    }
-    .part:hover>.more {
+}
+
+.overzichtpart .part {
+    height: 250px;
+    position: relative;
+}
+
+.manarrotatison {
+    transform: rotate(90deg);
+}
+
+.part {
+    &:hover>.toon {
         display: block;
     }
-    .overzicht-pagination li {
-        a {
-            padding: 6px 5px;
-            border: none;
-            color: #6f6c6c;
-            font-weight: bold;
-        }
-        display: inline-block;
+    &.big-img .toon i {
+        left: 50%;
+        top: 30%;
     }
+}
+
+.overzicht-pagination li {
+    display: inline-block;
+    a {
+        padding: 6px 5px;
+        border: none;
+        color: #6f6c6c;
+        font-weight: bold;
+    }
+}
+
+.overzichtpart {
+    .partoverzicht {
+        &.headimage {
+            height: 851px;
+            padding-right: 2px;
+        }
+        position: relative;
+        .toon {
+            display: none;
+            cursor: pointer;
+            i {
+                position: absolute;
+                z-index: 999;
+                color: #fff;
+                font-size: 64px;
+                line-height: 261px;
+                left: 35%;
+            }
+        }
+    }
+    margin-top: 20px;
+}
+
+.partoverzicht:hover>.toon {
+    display: block;
+}
+
+.overzichtpart {
+    .partoverzicht {
+        .toon .hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(86, 86, 86, 0.7);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .overzichtfoto {
+        margin-top: 20px;
+        padding: 10px;
+        .overzicht-year {
+            color: #0104a6;
+        }
+        .overzicht-title {
+            margin-top: -5px;
+            font-weight: bold;
+            color: #545353;
+        }
+        .euro {
+            display: block;
+            margin-top: 5px;
+            font-size: 18px;
+            color: #545353;
+        }
+        .date {
+            display: inline-block;
+            color: #545353;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        button {
+            float: right;
+            padding: 8px 5px;
+            background-color: transparent;
+            border: 1px solid #e5e5e5;
+            color: #0a1e75;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            i {
+                font-size: 24px;
+                margin-left: 5px;
+                position: relative;
+                top: 3px;
+            }
+        }
+        hr {
+            border: 1px solid #e5e5e5;
+            margin-top: 12px;
+        }
+        .overzicht-title {
+            margin-top: -5px;
+            font-weight: bold;
+            color: #545353;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.manar-other-infor {
+    >div>div> {
+        p>a:hover {
+            color: #0104a6;
+        }
+        h6 {
+            font-size: 12px;
+        }
+        p {
+            line-height: 3px;
+            >a {
+                color: #515252;
+                font-weight: normal;
+                font-size: 13px;
+            }
+        }
+    }
+    padding: 10px 1px;
+}
+
+.manar-o-i-container {
+    border-bottom: 1px solid #cccccc;
+}
+
+.manar-breadcrumb {
+    background: transparent;
+    li {
+        &:not(:first-child)::before {
+            content: ">" !important;
+            color: #01a6a0;
+        }
+        a {
+            color: #01a6a0;
+        }
+    }
+}

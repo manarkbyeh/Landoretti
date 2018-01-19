@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/app.min.css">
     <title>Hello, world!</title>
+    <style>
+        .container .mix {
+            display: none
+        }
+        
+        .manar-card {
+            height: 426px
+        }
+    </style>
 </head>
 
 <body class="">
@@ -140,204 +149,65 @@
                 </div>
                 <div class="list" id="manar-list-toggle-selector">
                     <div class="row">
-
-
                         <div class="col-sm-12 col-md-4 col-lg-2 hidden-sm-down sdf">
-                            <div>
+                            <div class="filter">
                                 <h6><strong>   PRICE</strong></h6>
-                                <p><a href="#">        Up to 5,000</a></p>
-                                <p><a href="#">     5,000-10,000</a></p>
-
-
-                                <p><a href="#">      10,000-25,000 </a></p>
-                                <p><a href="#">    25,000-50,000</a></p>
-                                <p><a href="#">    50,000-100,000</a></p>
-
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-1">Up to 5,000</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-2">5,000-10,000</a></p>
+                                <p> <a href="javascript:void(0)" class="filter-1" data-filter=".category-3">10,000-25,000</a></p>
+                                <p> <a href="javascript:void(0)" class="filter-1" data-filter=".category-4">25,000-50,000</a></p>
+                                <p> <a href="javascript:void(0)" class="filter-1" data-filter=".category-5">50,000-100,000</a></p>
+                                <p> <a href="javascript:void(0)">Above</a></p>
                             </div>
-                            <div>
+                            <div class="filter">
                                 <h6><strong>    ERA</strong></h6>
-                                <p><a href="#"> Pre-War</a></p>
-                                <p><a href="#">     1940s-1950s</a></p>
-
-
-                                <p><a href="#">  1960s-1980s </a></p>
-                                <p><a href="#">   1990s-Present</a></p>
-
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-6">Pre-War</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-7">1940s-1950s</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-8">1960s-1980s </a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-9">1990s-Present</a></p>
                             </div>
-
-                            <div>
-                                <h6><strong>     ENDINGS</strong></h6>
-
-                                <p><a href="#">     Ending this Week</a></p>
-
-
-                                <p><a href="#"> Newly Listed </a></p>
-                                <p><a href="#">  Purchase Now</a></p>
-
+                            <div class="filter">
+                                <h6><strong>ENDINGS</strong></h6>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-10">Ending this Week</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-11">Newly Listed </a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-12">Purchase Now</a></p>
                             </div>
-
-
-
-
-
-
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-2 hidden-sm-down sdf">
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-3 hidden-sm-down">
-                            <div>
+                            <div class="filter">
                                 <h6><strong>STYLE</strong></h6>
-                                <p><a href="#">     Abstract</a></p>
-                                <p><a href="#">     African American</a></p>
-
-
-                                <p><a href="#">   Conceptual </a></p>
-                                <p><a href="#">      Contemporary</a></p>
-                                <p><a href="#">  Emerging Artists</a></p>
-                                <p><a href="#">      Figurative</a></p>
-                                <p><a href="#">   Middle Eastern Contemporary</a></p>
-                                <p><a href="#">             Minimalism</a></p>
-                                <p><a href="#">  Modern</a></p>
-                                <p><a href="#">           Pop</a></p>
-                                <p><a href="#">              Urban</a></p>
-                                <p><a href="#">           
-                                                Vintage Photographs</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-13">Abstract</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-14">African American</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-15">Conceptual </a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-16">Contemporary</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-17">Emerging Artists</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-18">Figurative</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-19">Middle Eastern Contemporary</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-20">Minimalism</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-21">Modern</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-22">Pop</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-23">Urban</a></p>
+                                <p><a href="javascript:void(0)" class="filter-1" data-filter=".category-24">Vintage Photographs</a></p>
                             </div>
 
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <ul class="list-unstyled menu">
-                                <h4>Price</h4>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <ul class="list-unstyled menu">
-                                <h4>Price</h4>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                                <li><a href="#">Up to 5.000</a></li>
-                            </ul>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
 
-        <!-- gallery -->
-        <div class="overzicht-items">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 big-img-container">
-                        <div class="part big-img">
-                            <img src="/assets/images/man.jpg" class="img-responsive" alt="">
-                            <div class="big-img-text">
-                                <h2> “Lorem ipsum dolor” </h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, rem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit, rem ipsum dolor sit amet, consectetur adipisicing elit,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row mb-20">
-                            <div class="col-lg-6">
-                                <div class="part">
-                                    <div class="more">
-                                        <i class="fa fa-search"></i>
-                                        <div class="overlay"></div>
-                                    </div>
-                                    <img src="/assets/images/mockup-portret---stijlkeuze.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="author">1979, Salvador Dali</span>
-                                    <h4 class="title">Dance of Time III</h4>
-                                    <span class="price">€ 8.900</span>
-                                    <div class="timer">
-                                        25d&nbsp;14u&nbsp;44m
-                                    </div>
-                                    <button>visit auction <i class="fa fa-angle-right"></i></button>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="part">
-                                    <div class="more">
-                                        <i class="fa fa-search"></i>
-                                        <div class="overlay"></div>
-                                    </div>
-                                    <img src="/assets/images/related-items-img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="author">1979, Salvador Dali</span>
-                                    <h4 class="title">Dance of Time III</h4>
-                                    <span class="price">€ 8.900</span>
-                                    <div class="timer">
-                                        25d&nbsp;14u&nbsp;44m
-                                    </div>
-                                    <button>visit auction <i class="fa fa-angle-right"></i></button>
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="part">
-                                    <div class="more">
-                                        <i class="fa fa-search"></i>
-                                        <div class="overlay"></div>
-                                    </div>
-                                    <img src="/assets/images/related-items-img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="author">1979, Salvador Dali</span>
-                                    <h4 class="title">Dance of Time III</h4>
-                                    <span class="price">€ 8.900</span>
-                                    <div class="timer">
-                                        25d&nbsp;14u&nbsp;44m
-                                    </div>
-                                    <button>visit auction <i class="fa fa-angle-right"></i></button>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="part">
-                                    <div class="more">
-                                        <i class="fa fa-search"></i>
-                                        <div class="overlay"></div>
-                                    </div>
-                                    <img src="/assets/images/related-items-img.png" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="author">1979, Salvador Dali</span>
-                                    <h4 class="title">Dance of Time III</h4>
-                                    <span class="price">€ 8.900</span>
-                                    <div class="timer">
-                                        25d&nbsp;14u&nbsp;44m
-                                    </div>
-                                    <button>visit auction <i class="fa fa-angle-right"></i></button>
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- hier eindigt gallery -->
-        <!-- pagination  -->
+        <!-- pagination -->
         <div class="container">
-            <ul class="list-unstyled overzicht-pagination float-right p-2">
+            <ul class="list-unstyled overzicht-pagination float-left p-2">
+                <ol class="breadcrumb manar-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">option</a></li>
+                </ol>
+            </ul>
+            <ul class="list-unstyled overzicht-pagination float-right p-4">
                 <li class="left"><a href="#"><i class="fa fa-angle-left"></i></a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -345,193 +215,341 @@
                 <li><a href="#">4</a></li>
                 <li class="right"><a href="#"><i class="fa fa-angle-right"></i></a></li>
             </ul>
+            <div style="clear:both;"></div>
         </div>
-        <!-- einde van pagination  -->
-        <footer class="manar-footer-content ">
-
-            <div class="row container manar-footer-selector">
-                <div class="col-sm-12 col-md-4 col-lg-1 hidden-sm-down"></div>
-                <div class="col-sm-12 col-md-4 col-lg-3 hidden-sm-down">
-                    <div>
-                        <h6><strong>Help</strong></h6>
-                        <p><a href="#">Login</a></p>
-                        <p><a href="#">Register</a></p>
+        <!-- fin pagination -->
+        <!-- gallery -->
+        <div id="MixItUp1">
+            <div class="overzichtpart">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 big-img-container">
+                            <div class="part big-img">
+                                <img src="/assets/images/man.jpg" class="float-right" alt>
+                                <div class="big-img-text">
+                                    <h2> “Lorem ipsum dolor” </h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, rem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit, rem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row ">
+                                <div class="col-lg-6 col-md-6 manar-card  mix category-1 category-9 category-10 category-14">
+                                    <div class="partoverzicht ">
+                                        <div class="toon"> <i class="fa fa-search"></i>
+                                            <div class="hover"></div>
+                                        </div><img src="/assets/images/mockupbril.png" alt=""></div>
+                                    <div class="overzichtfoto"> <span class="overzicht-year">1979, Salvador Dali</span>
+                                        <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 8.900</span>
+                                        <div class="date" data-date="2018/02/13 20:09:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 manar-card mix category-3 category-8 category-11 category-14">
+                                    <div class="partoverzicht ">
+                                        <div class="toon"> <i class="fa fa-search"></i>
+                                            <div class="hover"></div>
+                                        </div><img src="/assets/images/mockupbril.png" alt=""></div>
+                                    <div class="overzichtfoto"> <span class="overzicht-year">1980, Salvador Dali</span>
+                                        <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 16.900</span>
+                                        <div class="date" data-date="2018/01/24 20:09:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 manar-card mix category-2 category-6 category-12 category-14">
+                                    <div class="partoverzicht ">
+                                        <div class="toon"> <i class="fa fa-search"></i>
+                                            <div class="hover"></div>
+                                        </div><img src="/assets/images/mockupbril.png" alt=""></div>
+                                    <div class="overzichtfoto"> <span class="overzicht-year">1900, Salvador Dali</span>
+                                        <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 9.900</span>
+                                        <div class="date" data-date="2018/01/19 20:09:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 manar-card mix category-1 category-11 category-9 category-14">
+                                    <div class="partoverzicht ">
+                                        <div class="toon"> <i class="fa fa-search"></i>
+                                            <div class="hover"></div>
+                                        </div><img src="/assets/images/mockupbril.png" alt=""></div>
+                                    <div class="overzichtfoto"> <span class="overzicht-year">2007, Salvador Dali</span>
+                                        <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 15.000</span>
+                                        <div class="date" data-date="2018/01/22 20:15:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h6><strong>Help</strong></h6>
-                        <p><a href="#">Terms of Service </a></p>
-                        <p><a href="#">Privacy Policy</a></p>
-                        <p><a href="#">FAQ</a></p>
-                        <p><a href="#">CONTACT</a></p>
-                        <p><a href="#">About us</a></p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 manar-card mix category-4 category-9 category-10 category-14">
+                            <div class="partoverzicht ">
+                                <div class="toon"> <i class="fa fa-search"></i>
+                                    <div class="hover"></div>
+                                </div><img src="/assets/images/mockupbril.png" alt=""></div>
+                            <div class="overzichtfoto"> <span class="overzicht-year">1999, Salvador Dali</span>
+                                <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 30.500</span>
+                                <div class="date" data-date="2018/01/27 20:09:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 manar-card mix category-5 category-9 category-12 category-14">
+                            <div class="partoverzicht ">
+                                <div class="toon"> <i class="fa fa-search"></i>
+                                    <div class="hover"></div>
+                                </div> <img src="/assets/images/mockupbril.png" alt=""></div>
+                            <div class="overzichtfoto"> <span class="overzicht-year">1980, Salvador Dali</span>
+                                <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 50.100</span>
+                                <div class="date" data-date="2018/01/19 19:09:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 manar-card  mix category-5 category-7 category-10 category-14">
+                            <div class="partoverzicht ">
+                                <div class="toon"> <i class="fa fa-search"></i>
+                                    <div class="hover"></div>
+                                </div><img src="/assets/images/mockupbril.png" alt=""></div>
+                            <div class="overzichtfoto"> <span class="overzicht-year">1945, Salvador Dali</span>
+                                <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 80.000</span>
+                                <div class="date" data-date="2018/01/29 01:09:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 manar-card mix category-4 category-8 category-11  category-14" data-bound="">
+                            <div class="partoverzicht ">
+                                <div class="toon"> <i class="fa fa-search"></i>
+                                    <div class="hover"></div>
+                                </div> <img src="/assets/images/mockupbril.png" alt=""></div>
+                            <div class="overzichtfoto"> <span class="overzicht-year">1988, Salvador Dali</span>
+                                <h4 class="overzicht-title">Dance of Time III</h4> <span class="euro">€ 40.900</span>
+                                <div class="date" data-date="2018/01/22 20:09:00"></div> <button>visit auction <i class="fa fa-angle-right"></i></button>
+                                <hr>
+                            </div>
+                        </div>
+
                     </div>
-                    <div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- hier eindigt gallery -->
+    <div class="container">
+        <ul class="list-unstyled overzicht-pagination float-right p-2">
+            <li class="left"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li class="active"><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="right"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+    <!-- einde van pagination  -->
+    <footer class="manar-footer-content ">
+
+        <div class="row container manar-footer-selector">
+            <div class="col-sm-12 col-md-4 col-lg-1 hidden-sm-down"></div>
+            <div class="col-sm-12 col-md-4 col-lg-3 hidden-sm-down">
+                <div>
+                    <h6><strong>Help</strong></h6>
+                    <p><a href="#">Login</a></p>
+                    <p><a href="#">Register</a></p>
+                </div>
+                <div>
+                    <h6><strong>Help</strong></h6>
+                    <p><a href="#">Terms of Service </a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">CONTACT</a></p>
+                    <p><a href="#">About us</a></p>
+                </div>
+                <div>
 
 
 
-                        <h6><strong>LANGUAGES</strong></h6>
-                        <p><a href="#">Nederland </a></p>
-                        <p><a href="#">   Françai</a></p>
-                        <p><a href="#">
+                    <h6><strong>LANGUAGES</strong></h6>
+                    <p><a href="#">Nederland </a></p>
+                    <p><a href="#">   Françai</a></p>
+                    <p><a href="#">
                                     English</a></p>
 
-                    </div>
-
-
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3 hidden-sm-down">
-                    <div>
-                        <h6><strong>STYLE</strong></h6>
-                        <p><a href="#">     Abstract</a></p>
-                        <p><a href="#">     African American</a></p>
 
-                        <h6><strong>  Asian Contemporary</strong></h6>
-                        <p><a href="#">   Conceptual </a></p>
-                        <p><a href="#">      Contemporary</a></p>
-                        <p><a href="#">  Emerging Artists</a></p>
-                        <p><a href="#">      Figurative</a></p>
-                        <p><a href="#">   Middle Eastern Contemporary</a></p>
-                        <p><a href="#">             Minimalism</a></p>
-                        <p><a href="#">  Modern</a></p>
-                        <p><a href="#">           Pop</a></p>
-                        <p><a href="#">              Urban</a></p>
-                        <p><a href="#">           
+
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 hidden-sm-down">
+                <div>
+                    <h6><strong>STYLE</strong></h6>
+                    <p><a href="#">     Abstract</a></p>
+                    <p><a href="#">     African American</a></p>
+
+                    <h6><strong>  Asian Contemporary</strong></h6>
+                    <p><a href="#">   Conceptual </a></p>
+                    <p><a href="#">      Contemporary</a></p>
+                    <p><a href="#">  Emerging Artists</a></p>
+                    <p><a href="#">      Figurative</a></p>
+                    <p><a href="#">   Middle Eastern Contemporary</a></p>
+                    <p><a href="#">             Minimalism</a></p>
+                    <p><a href="#">  Modern</a></p>
+                    <p><a href="#">           Pop</a></p>
+                    <p><a href="#">              Urban</a></p>
+                    <p><a href="#">           
                                         Vintage Photographs</a></p>
-                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2 hidden-sm-down sdf">
+                <div>
+                    <h6><strong>   PRICE</strong></h6>
+                    <p><a href="#">        Up to 5,000</a></p>
+                    <p><a href="#">     5,000-10,000</a></p>
+
+
+                    <p><a href="#">      10,000-25,000 </a></p>
+                    <p><a href="#">    25,000-50,000</a></p>
+                    <p><a href="#">    50,000-100,000</a></p>
 
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-2 hidden-sm-down sdf">
-                    <div>
-                        <h6><strong>   PRICE</strong></h6>
-                        <p><a href="#">        Up to 5,000</a></p>
-                        <p><a href="#">     5,000-10,000</a></p>
+                <div>
+                    <h6><strong>    ERA</strong></h6>
+                    <p><a href="#"> Pre-War</a></p>
+                    <p><a href="#">     1940s-1950s</a></p>
 
 
-                        <p><a href="#">      10,000-25,000 </a></p>
-                        <p><a href="#">    25,000-50,000</a></p>
-                        <p><a href="#">    50,000-100,000</a></p>
-
-                    </div>
-                    <div>
-                        <h6><strong>    ERA</strong></h6>
-                        <p><a href="#"> Pre-War</a></p>
-                        <p><a href="#">     1940s-1950s</a></p>
-
-
-                        <p><a href="#">  1960s-1980s </a></p>
-                        <p><a href="#">   1990s-Present</a></p>
-
-                    </div>
-
-                    <div>
-                        <h6><strong>     ENDINGS</strong></h6>
-
-                        <p><a href="#">     Ending this Week</a></p>
-
-
-                        <p><a href="#"> Newly Listed </a></p>
-                        <p><a href="#">  Purchase Now</a></p>
-
-                    </div>
-
-
-
-
-
+                    <p><a href="#">  1960s-1980s </a></p>
+                    <p><a href="#">   1990s-Present</a></p>
 
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-3   ">
-                    <h6><strong>     FIND WHAT YOU NEED</strong></h6>
-                    <div class=" mana-searchbox ">
-                        <form class="form-inline my-2 my-lg-0 manar-mobile-input   ">
-                            <input class="sm-height manar-input form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="sm-height btn btn-light my-2 my-sm-0" type="submit">
+
+                <div>
+                    <h6><strong>     ENDINGS</strong></h6>
+
+                    <p><a href="#">     Ending this Week</a></p>
+
+
+                    <p><a href="#"> Newly Listed </a></p>
+                    <p><a href="#">  Purchase Now</a></p>
+
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3   ">
+                <h6><strong>     FIND WHAT YOU NEED</strong></h6>
+                <div class=" mana-searchbox ">
+                    <form class="form-inline my-2 my-lg-0 manar-mobile-input   ">
+                        <input class="sm-height manar-input form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="sm-height btn btn-light my-2 my-sm-0" type="submit">
                                     <i class="fa fa-search"></i>
                                 </button>
-                        </form>
-                    </div>
-                    <div class="manar-contact-footer ">
-                        <h6><strong>     Contact.</strong></h6>
-                        <p> Landoretti ART </p>
+                    </form>
+                </div>
+                <div class="manar-contact-footer ">
+                    <h6><strong>     Contact.</strong></h6>
+                    <p> Landoretti ART </p>
 
 
-                        <p> Straatnaam xxx </p>
-                        <p> xxxx, Oostende </p>
-                    </div>
-                    <div>
-                        <p> <i class="fa fa-phone"></i> +xx (0)x xxx xx xx</p>
-                        <p> <i class="fa fa-envelope-o"></i>
-                            <a href="mailto:info@landorettiart.com">info@landorettiart.com</a>
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./assets/images/face.png">
-                        <img src="./assets/images/google.png">
-                        <img src="./assets/images/twitter.png">
-                        <img src="./assets/images/youtube.png">
+                    <p> Straatnaam xxx </p>
+                    <p> xxxx, Oostende </p>
+                </div>
+                <div>
+                    <p> <i class="fa fa-phone"></i> +xx (0)x xxx xx xx</p>
+                    <p> <i class="fa fa-envelope-o"></i>
+                        <a href="mailto:info@landorettiart.com">info@landorettiart.com</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/images/face.png">
+                    <img src="./assets/images/google.png">
+                    <img src="./assets/images/twitter.png">
+                    <img src="./assets/images/youtube.png">
 
-
-
-                    </div>
-                    <div class="manar-sub-footer">
-                        © 2013 Studio6, Inc. All rights reserved.
-                    </div>
 
 
                 </div>
+                <div class="manar-sub-footer">
+                    © 2013 Studio6, Inc. All rights reserved.
+                </div>
+
+
             </div>
-            <!-- bottom nav -->
-            <div class="hidden-sm-down manar-bottom-navbar manar-sub-top-nav d-lg-flex justify-content-lg-end bg-light ">
-                <div class="manar-logo-bottom">
-                    <a href=""><img src="./assets/images/logo-bottom.png" alt=""></a>
-                </div>
-                <nav class="  navbar navbar-expand-lg navbar-light  manar-shrink-nav-indesk">
-                    <a class="logoBrendManar navbar-brand see-on-mobile" href="#">Landerotti</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+        <!-- bottom nav -->
+        <div class="hidden-sm-down manar-bottom-navbar manar-sub-top-nav d-lg-flex justify-content-lg-end bg-light ">
+            <div class="manar-logo-bottom">
+                <a href=""><img src="./assets/images/logo-bottom.png" alt=""></a>
+            </div>
+            <nav class="  navbar navbar-expand-lg navbar-light  manar-shrink-nav-indesk">
+                <a class="logoBrendManar navbar-brand see-on-mobile" href="#">Landerotti</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
                                 </button>
 
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">art</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">isearch</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">myauctions</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">mybids</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">contact</a>
-                            </li>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">art</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">isearch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">myauctions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">mybids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
 
-                        </ul>
-                        <ul class="manar-lang-bar d-flex">
-                            <li>NL</li>
-                            <li>FR</li>
-                            <li>EN</li>
-                        </ul>
-                    </div>
-                </nav>
+                    </ul>
+                    <ul class="manar-lang-bar d-flex">
+                        <li>NL</li>
+                        <li>FR</li>
+                        <li>EN</li>
+                    </ul>
+                </div>
+            </nav>
 
-            </div>
-            <!-- einde bottom nav -->
-        </footer>
-    </div>
+        </div>
+        <!-- einde bottom nav -->
+    </footer>
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="./assets/js/mix.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+        $(function() {
+            $('#MixItUp1').mixItUp({
+                selectors: {
+                    filter: '.filter-1'
+                }
+            });
+            $(".date").each(function(index, value) {
+                var date = value.getAttribute('data-date');
+                $(value).countdown(date, function(e) {
+                    $(this).html(e.strftime("%D d %H u %M m"))
+                }).on("finish.countdown", function(e) {
+                    $(this).parent().parent().parent().fadeOut(600)
+                })
+            })
+        });
+    </script>
 </body>
 
-</html>ssc
+</html>
