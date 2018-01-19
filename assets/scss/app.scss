@@ -736,12 +736,9 @@ body {
                 }
             }
         }
+        height: 250px;
+        position: relative;
     }
-}
-
-.overzichtpart .part {
-    height: 250px;
-    position: relative;
 }
 
 .manarrotatison {
@@ -769,12 +766,13 @@ body {
 }
 
 .overzichtpart {
+    margin-top: 20px;
     .partoverzicht {
+        position: relative;
         &.headimage {
             height: 851px;
             padding-right: 2px;
         }
-        position: relative;
         .toon {
             display: none;
             cursor: pointer;
@@ -788,7 +786,6 @@ body {
             }
         }
     }
-    margin-top: 20px;
 }
 
 .partoverzicht:hover>.toon {
@@ -863,6 +860,7 @@ body {
 }
 
 .manar-other-infor {
+    padding: 10px 1px;
     >div>div> {
         p>a:hover {
             color: #0104a6;
@@ -879,7 +877,6 @@ body {
             }
         }
     }
-    padding: 10px 1px;
 }
 
 .manar-o-i-container {
@@ -897,4 +894,119 @@ body {
             color: #01a6a0;
         }
     }
+}
+
+.top-alert h5 {
+    font-size: 14px;
+    color: red;
+    line-height: 14px;
+    padding: 7px 13px 2px 13px;
+    border-radius: 0 !important;
+    i {
+        font-size: 7px;
+        margin-right: 7px;
+    }
+}
+
+.drop-down-selector {
+    .dropdown-toggle::after {
+        content: "\f107" !important;
+        font-family: FontAwesome;
+        position: absolute;
+        right: 47px;
+        top: 1px;
+        font-size: 30px;
+        border: 0 !important;
+    }
+    button {
+        width: 100%;
+        text-align: left;
+        font-weight: bold;
+        background-color: #e5e5e5;
+        border: 0;
+        color: #4f5454;
+        border-radius: 0;
+        padding: 11px 20px;
+    }
+    >div {
+        width: 100%;
+        >a {}
+    }
+}
+
+.contentform {
+    .row {
+        padding: 10px 0;
+    }
+    label {
+        padding: 14px 0 1px 0;
+        color: #191760;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 950px) {
+    .form-container-top {
+        max-width: 840px !important;
+    }
+}
+
+.manar-drop-dow {
+    .input-group-prepend>.input-group-text {}
+    .border-selector-input .form-control {
+        &:focus {
+            outline: 0;
+            border: 1px solid #dad6d6;
+            box-shadow: unset;
+        }
+        border-left: 0 !important;
+    }
+}
+
+.input-group-is-fouses {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.manar-drop-dow {
+    .form-control,
+    .input-group-text {
+        border-radius: 0;
+        background: whitesmoke;
+    }
+    .is-invalid {
+        background-color: #ffecec;
+    }
+}
+
+.image-grad {
+    label {
+        text-align: center;
+        color: #fff;
+    }
+    background: #757575;
+    width: 95%;
+    height: 61px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    outline: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    span {
+        width: 87%;
+        margin: 0 auto;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.inof-fazz>div {
+    font-size: 13px;
+    color: grey;
 }
